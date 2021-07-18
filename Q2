@@ -8,12 +8,12 @@ int len=0;
 while(str[len]!='\0')
   len++;
 
-for(int i=0;i<len/2;i++) {
-  char c;
-  c=str[i];
-  str[i]=str[len-i-1];
-  str[len-i-1]=c;
-  }
+  for(int i=0;i<len/2;i++) {
+    char c;
+    c=str[i];
+    str[i]=str[len-i-1];
+    str[len-i-1]=c;
+    }
 }
 
 //count
@@ -27,7 +27,7 @@ while(str[i]!='\0') {
   }returen vowel;
 }
 int main()
-char str[]="hello";
+char str[]="Oliver";
 reverse(str);
 
 printf("The reverse string is: %s",str);
